@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('nombre_scrumMaster');
             $table->string('certificacion_scrumMaster');
             $table->integer('contacto_scrumMaster');
-            $table->foreignId('scrumMaster_id')->references('id')->on('scrumMaster');
             $table->timestamps();
         });
     }

@@ -13,10 +13,8 @@ return new class extends Migration
     {
         Schema::create('scrum_teams', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->string('nombre')->nullable();
             $table->integer('SprintActual')->nullable();
-            $table->foreignId('scrumTeam_id')->references('id')->on('scrumTeam');
             $table->timestamps();
           
 

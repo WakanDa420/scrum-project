@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('nombre_productOwner');
             $table->string('experiencia_productOwner');
             $table->integer('contacto_productOwner');
-            $table->foreignId('productOwner_id')->references('id')->on('productOwner');
             $table->timestamps();
 
         });

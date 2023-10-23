@@ -15,9 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('nombre_productbacklog');
-            $table->array('tarea'); 
-            $table->foreignId('productbacklog_id')->references('id')->on('productbacklog');
-            $table->timeslaps();
+            $table->longText('tarea');
         });
     }
 

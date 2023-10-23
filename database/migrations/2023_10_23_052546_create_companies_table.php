@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('nombre_company');
             $table->string('direccion_company');
             $table->integer('contacto_company');
-            $table->foreignId('company_id')->references('id')->on('company');
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('burndown_charts', function (Blueprint $table) {
             $table->id();
             $table->string('datosSeguimiento_BurndownChart');
-            $table->foreignId('productOwner_id')->references('id')->on('productOwner');
+            $table->foreignId('productOwner_id')->references('id')->on('product_owners');
             $table->timestamps();
         });
     }
