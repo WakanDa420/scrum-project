@@ -15,7 +15,8 @@ return new class extends Migration
             $table->engine = "InnoDB";
             $table->id();
             $table->string('numero_sprint');
-            $table->integer('number')->nullable();
+            $table->string('fecha_inicio');
+            $table->string('fecha_fin');
             $table->timestamps();
         });
     }

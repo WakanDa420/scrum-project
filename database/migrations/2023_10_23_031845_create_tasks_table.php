@@ -15,7 +15,9 @@ return new class extends Migration
             $table->engine = "InnoDB";
             $table->id();
             $table->foreignId('sprints_id')->references('id')->on('sprints');
-
+            $table->string('description');
+            $table->string('estado');
+            $table->foreignId('developers_id')->references('id')->on('developers');
             $table->timestamps();
         });
     }
